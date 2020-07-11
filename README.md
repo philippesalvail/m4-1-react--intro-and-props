@@ -196,7 +196,7 @@ We can solve this by mapping over the `messages` prop we provided to `ChatStream
 ```js
 return (
   <section className="chat-stream">
-    {props.messages.map(message => {
+    {props.messages.map((message) => {
       return <div>{message.body}</div>;
     })}
   </section>
@@ -261,7 +261,7 @@ Inside `ChatStream`, we're mapping through each message in the array. Pass that 
 ```jsx
 // Inside `ChatStream`
 {
-  props.messages.map(message => {
+  props.messages.map((message) => {
     return <ChatMessage message={message} />;
   });
 }
@@ -356,9 +356,9 @@ function ChatStream(props) {
       {props.messages.map(message => {
 +       let messageType;
 +       if (message.user === props.currentUser) {
-+         messageType === 'sent';
++         messageType = 'sent';
 +       } else {
-+         messageType === 'received';
++         messageType = 'received';
 +       }
 +
 -        return <ChatMessage user={message.user} body={message.body} />;
