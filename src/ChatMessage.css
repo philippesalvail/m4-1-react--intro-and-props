@@ -1,0 +1,28 @@
+.chat-message {
+  display: flex;
+}
+.currentUser-chat-message {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.character-Face {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.character-Name {
+  margin-bottom: 2%;
+}
+.name-and-message {
+  margin-left: 1%;
+}
+
+.character-Message {
+  flex: 1;
+}
+.chats {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
